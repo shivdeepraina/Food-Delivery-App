@@ -30,8 +30,8 @@ const Homescreen = ({navigation}) => {
     useEffect(() => {
         setVegData(foodData.filter((item) => item.foodType == 'veg'))
         setNonVegData(foodData.filter((item) => item.foodType == 'non-veg'))
-        setresname(foodData.filter((item) => item.restaurentName == 'Ram Restaurent'))
-        setrestname(foodData.filter((item) => item.restaurentName == 'Shyam Restaurent'))
+        // setresname(foodData.filter((item) => item.restaurentName == 'Ram Restaurent'))
+        // setrestname(foodData.filter((item) => item.restaurentName == 'Shyam Restaurent'))
 
         // setVegPaneer(foodData.filter,where(foodData, '==', '%paneer%'))
 
@@ -82,8 +82,8 @@ const Homescreen = ({navigation}) => {
         <CategoriesSection></CategoriesSection>
         <Slider></Slider>
         <AllRestaurents></AllRestaurents>
-        <CardSlider title={"--- Ram Restaurent ---"} data={resname} navigation={navigation} ></CardSlider>
-        <CardSlider title={"--- Shyam Restaurent ---"} data={restname} navigation={navigation} ></CardSlider>
+        {/* <CardSlider title={"--- Ram Restaurent ---"} data={resname} navigation={navigation} ></CardSlider>
+        <CardSlider title={"--- Shyam Restaurent ---"} data={restname} navigation={navigation} ></CardSlider> */}
         <CardSlider title={"--- FEATURED ---"} data={foodData} navigation={navigation} ></CardSlider>
         <CardSlider title={"--- NON-VEG ---"} data={NonVegData} navigation={navigation} ></CardSlider>
         <CardSlider title={"--- VEG ---"} data={VegData} navigation={navigation} ></CardSlider>
